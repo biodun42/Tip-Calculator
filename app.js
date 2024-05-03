@@ -7,9 +7,6 @@ const billinputn = document.querySelector(".number_input");
 const resetButton = document.getElementById("reset");
 const customTip = document.getElementById("custom");
 
-billInput.type = "number";
-numPeopleInput.type = "number";
-
 function ifZero() {
   if (billInput.value === "") {
     theBill.classList.add("active");
