@@ -1,0 +1,107 @@
+@media screen and (max-width: 919px) {
+  .container {
+    margin-top: 4rem;
+    margin-bottom: -8rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  .splitter {
+    width: 800px;
+  }
+  .left_splitter {
+    width: 400px;
+  }
+  .right_splitter {
+    width: 400px;
+  }
+  .all_buttons button{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 819px) {
+  .container {
+    margin-top: 4rem;
+    margin-bottom: -8rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  .splitter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  .left_splitter{
+    padding: 0.5rem;
+  }
+  .right_splitter{
+    padding: 0.5rem;
+  }
+  .the-bill {
+    width: 100%;
+  }
+  .top {
+    width: 100%;
+  }
+  .left_splitter {
+    width: 100%;
+  }
+  .Select_tip {
+    width: 100%;
+  }
+  .all_buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+  .all_buttons button {
+    width: 100%;
+  }
+  .custom {
+    width: 100%;
+  }
+  .custom input {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .left_splitter {
+    width: 100%;
+    border-radius: 2rem;
+  }
+  .right_splitter {
+    width: 100%;
+    padding: 2rem;
+  }
+  .bill_input {
+    width: 100%;
+  }
+  .number_input{
+    width: 100%;
+  }
+  .Reset{
+    margin-top: -1rem;
+  }
+}
+@media screen and (max-width: 428px){
+  .container{
+    padding: 0;
+  }
+  .all_buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+  .Total_tip_text h5{
+    font-size: 12px;
+  }
+  .Total_tip-amount h1{
+    font-size: 2rem;
+  }
+  .right_splitter{
+    padding: 1.5rem;
+  }
+}

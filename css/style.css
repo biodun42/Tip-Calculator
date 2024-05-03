@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: hsl(185, 41%, 84%);
+}
+.container {
+  width: 100%;
+  margin: 2.3rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+.splitter {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  gap: 2rem;
+  width: 900px;
+}
+.left_splitter {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.right_splitter {
+  width: 450px;
+}
+form{
+  width: 100%;
+}
+.the-bill{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.the-bill label {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+  font-size: 15px;
+}
+#m {
+  display: none;
+}
+#m.active {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: red;
+  font-size: 14px;
+}
+.bill_input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.3rem;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border: 2px solid transparent;
+}
+.bill_input.active{
+  border: 2px solid red;
+
+}
+.the-bill input {
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 25px;
+  outline: none;
+  border: none;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+}
+.bill_input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+.the-bill input:hover {
+  cursor: pointer;
+}
+.Select_tip{
+  width: 100%;
+}
+.Select_tip h2 {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+  font-size: 15px;
+}
+.all_buttons {
+  width: 100%;
+  margin-top: 7px;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+}
+.all_buttons button {
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: white;
+  flex-grow: 1;
+  width: 130px;
+}
+.all_buttons button:active {
+  background-color: hsl(185, 41%, 84%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+.custom input {
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  width: 130px;
+  border: 2px solid transparent;
+}
+.custom input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+.custom input::placeholder {
+  color: hsl(186, 14%, 43%);
+  font-size: 24px;
+}
+.all_the_people{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+}
+.down{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.all_the_people label {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: hsl(186, 14%, 43%);
+  font-size: 15px;
+}
+#n {
+  display: none;
+}
+#n.active {
+  display: block;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: red;
+  font-size: 14px;
+}
+.number_input {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 5px;
+  padding: 0 0.5rem;
+  border: 2px solid transparent;
+  gap: 2.3rem;
+}
+.number_input.active{
+  border: 2px solid red;
+}
+.number_input input {
+  width: 100% ;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 25px;
+  border: none;
+  outline: none;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+}
+.number_input:hover {
+  border: 2px solid hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+.number_input input:hover {
+  cursor: pointer;
+}
+.number_input.active {
+  border: 2px solid red;
+}
+.right_splitter {
+  background-color: hsl(183, 100%, 15%);
+  padding: 2rem;
+  border-radius: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.Total_tip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+.Total_tip_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.Total_tip_text h5 {
+  color: hsl(185, 41%, 84%);
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.Total_tip_text p {
+  color: hsl(186, 14%, 43%);
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.Total_tip-amount h1 {
+  color: hsl(172, 67%, 45%);
+  font-size: 40px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.Total_tip_number h5 {
+  color: hsl(185, 41%, 84%);
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.Total_tip_number p {
+  color: hsl(186, 14%, 43%);
+  font-size: 12px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+.Reset {
+  width: 100%;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.Reset button {
+  background-color: hsl(172, 67%, 45%);
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  color: hsl(183, 100%, 15%);
+  text-transform: uppercase;
+}
+.Reset button:hover {
+  background-color: hsl(185, 41%, 84%);
+  cursor: pointer;
+}

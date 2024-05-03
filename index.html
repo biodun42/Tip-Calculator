@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Responsive.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="" />
+      </header>
+      <main>
+        <div class="splitter">
+          <div class="left_splitter">
+            <form action="splitter_input">
+              <div class="the-bill">
+                <div class="top">
+                  <label for="bill">Bill</label>
+                  <span id="m">Can't be zero</span>
+                </div>
+                <div class="bill_input">
+                  <img src="images/icon-dollar.svg" alt="" />
+                  <input type="number" id="bill" placeholder="0" min="0" />
+                </div>
+              </div>
+            </form>
+            <div class="Select_tip">
+              <h2>Select Tip %</h2>
+              <div class="all_buttons">
+                <button onclick="calculateTipOne()">5%</button>
+                <button onclick="calculateTipTwo()">10%</button>
+                <button onclick="calculateTipThree()">15%</button>
+                <button onclick="calculateTipFour()">25%</button>
+                <button onclick="calculateTipFive()">50%</button>
+                <div class="custom">
+                  <input
+                    type="number"
+                    name="Tip"
+                    id="custom"
+                    placeholder="Custom"
+                  />
+                </div>
+              </div>
+            </div>
+              <form action="splitter_input">
+                <div class="the-bill">
+                  <div class="down">
+                    <label for="bill">Number of people</label>
+                    <span id="n">Can't be zero</span>
+                  </div>
+                  <div class="number_input">
+                    <img src="images/icon-dollar.svg" alt="" />
+                    <input type="number" id="people" placeholder="0" min="0" />
+                  </div>
+                </div>
+                </div>
+          <div class="right_splitter">
+            <div class="Total_tip">
+              <div class="Total_tip_text">
+                <h5>Tip Amount</h5>
+                <p>/ person</p>
+              </div>
+              <div class="Total_tip-amount">
+                <h1 id="tip">$0.00</h1>
+              </div>
+            </div>
+            <div class="Total_tip">
+              <div class="Total_tip_text">
+                <h5>Total</h5>
+                <p>/ person</p>
+              </div>
+              <div class="Total_tip-amount">
+                <h1 id="Total">$0.00</h1>
+              </div>
+            </div>
+            <div class="Reset">
+              <button id="reset" onclick="reset()">Reset</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
