@@ -10,7 +10,7 @@ body{
 }
 .container {
   width: 100%;
-  margin: 2.3rem auto;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,7 @@ body{
 }
 .splitter {
   background-color: hsl(0, 0%, 100%);
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
