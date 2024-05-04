@@ -8,7 +8,7 @@ const resetButton = document.getElementById("reset");
 const customTip = document.getElementById("custom");
 
 function ifZero() {
-  if (billInput.value === "") {
+  if (billInput.value === "" || billInput.value === "0") {
     theBill.classList.add("active");
     billInputm.classList.add("active");
     document.getElementById("tip").innerText = "$0.00";
@@ -17,7 +17,7 @@ function ifZero() {
     theBill.classList.remove("active");
     billInputm.classList.remove("active");
   }
-  if (numPeopleInput.value === "") {
+  if (numPeopleInput.value === "" || numPeopleInput.value === "0") {
     theBilltwo.classList.add("active");
     billinputn.classList.add("active");
     document.getElementById("tip").innerText = "$0.00";
