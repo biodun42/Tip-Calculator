@@ -16,7 +16,7 @@
     width: 100%;
   }
 }
-@media screen and (max-width: 819px) {
+@media screen and (max-width: 850px) {
   .container {
     margin-top: 2.5rem;
     height: auto;

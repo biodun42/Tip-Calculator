@@ -306,7 +306,7 @@ form{
   color: hsl(183, 100%, 15%);
   text-transform: uppercase;
 }
-.Reset button:hover {
+.Reset button:active {
   background-color: hsl(185, 41%, 84%);
   cursor: pointer;
 }
